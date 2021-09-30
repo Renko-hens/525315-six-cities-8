@@ -1,7 +1,7 @@
 # Личный проект «Шесть городов»
 
 * Студент: [Renko Hens](https://up.htmlacademy.ru/react/8/user/525315).
-* Наставник: `Неизвестно`.
+* Наставник: [Владимир Ульянов](https://htmlacademy.ru/profile/lionskape).
 
 ---
 
