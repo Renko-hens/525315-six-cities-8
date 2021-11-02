@@ -1,7 +1,11 @@
 import React from 'react';
 import Logo from '../logo/logo';
 import PlaceCard from '../place-card/place-card';
-import { MainProps } from '../../types/props';
+import { PlaceCardType } from '../../types/place-card';
+
+type MainProps = {
+  placeCards: PlaceCardType[],
+}
 
 function MainPage({
   placeCards,

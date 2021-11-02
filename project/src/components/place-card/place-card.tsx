@@ -1,4 +1,4 @@
-import { PlaceCardProps } from '../../types/props';
+import { PlaceCardType } from '../../types/place-card';
 
 const FIVE_POINT_RATING_COEFFICIENT = 20;
 
@@ -10,7 +10,7 @@ function PlaceCard({
   bookmarkActive,
   title,
   type,
-}: PlaceCardProps): JSX.Element {
+}: PlaceCardType): JSX.Element {
   return (
     <article className="cities__place-card place-card">
       {premium && (

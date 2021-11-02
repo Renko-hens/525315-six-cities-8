@@ -42,6 +42,7 @@ const mockPlaceCards = [
   },
   {
     id: 5,
+    premium: false,
     srcImage: 'img/room.jpg',
     value: 80,
     rating: 4,
@@ -50,7 +51,6 @@ const mockPlaceCards = [
     type: 'Private room',
   },
 ];
-
 
 ReactDOM.render(
   <React.StrictMode>

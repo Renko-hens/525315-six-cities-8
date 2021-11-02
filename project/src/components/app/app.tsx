@@ -1,5 +1,5 @@
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
-import { AppProps } from '../../types/props';
+import { PlaceCardType } from '../../types/place-card';
 import {
   AppRoute,
   AuthorizationStatus
@@ -10,6 +10,10 @@ import Favorites from '../favorites/favorites';
 import Login from '../login/login';
 import Property from '../property/property';
 import NotFoundScreen from '../not-found-screen/not-found-screen';
+
+type AppProps = {
+  placeCards: PlaceCardType[],
+};
 
 function App({placeCards}: AppProps): JSX.Element {
   return (
