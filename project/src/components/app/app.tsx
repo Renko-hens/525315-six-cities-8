@@ -1,5 +1,5 @@
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
-import { PlaceCardType } from '../../types/place-card';
+import { Offers } from '../../types/offers';
 import {
   AppRoute,
   AuthorizationStatus
@@ -12,15 +12,15 @@ import Property from '../property/property';
 import NotFoundScreen from '../not-found-screen/not-found-screen';
 
 type AppProps = {
-  placeCards: PlaceCardType[],
+  offers: Offers,
 };
 
-function App({placeCards}: AppProps): JSX.Element {
+function App({offers}: AppProps): JSX.Element {
   return (
     <BrowserRouter>
       <Switch>
         <Route exact path={AppRoute.Main}>
-          <Main placeCards={placeCards} />
+          <Main offers={offers} />
         </Route>
 
         <PrivateRoute
@@ -37,7 +37,7 @@ function App({placeCards}: AppProps): JSX.Element {
         <PrivateRoute
           exact
           path={AppRoute.Offer}
-          authorizationStatus={AuthorizationStatus.NoAuth}
+          authorizationStatus={AuthorizationStatus.Auth}
           render={() => <Property/>}
         />
 

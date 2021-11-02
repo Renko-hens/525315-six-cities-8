@@ -1,14 +1,14 @@
 import React from 'react';
 import Logo from '../logo/logo';
-import PlaceCard from '../place-card/place-card';
-import { PlaceCardType } from '../../types/place-card';
+import { Offers } from '../../types/offers';
+import PlaceCardList from '../place-card-list/place-card-list';
 
 type MainProps = {
-  placeCards: PlaceCardType[],
+  offers: Offers,
 }
 
 function MainPage({
-  placeCards,
+  offers,
 }: MainProps): JSX.Element {
   return (
     <>
@@ -104,31 +104,10 @@ function MainPage({
                     <li className="places__option" tabIndex={0}>Top rated first</li>
                   </ul>
                 </form>
-                <div className="cities__places-list places__list tabs__content">
-                  {
-                    placeCards.map(({
-                      id,
-                      premium,
-                      srcImage,
-                      value,
-                      rating,
-                      title,
-                      bookmarkActive,
-                      type,
-                    }): JSX.Element => (
-                      <PlaceCard
-                        key={id}
-                        premium={premium}
-                        srcImage={srcImage}
-                        value={value}
-                        rating={rating}
-                        title={title}
-                        bookmarkActive={bookmarkActive}
-                        type={type}
-                      />
-                    ))
-                  }
-                </div>
+
+                <PlaceCardList
+                  offers={offers}
+                />
               </section>
               <div className="cities__right-section">
                 <section className="cities__map map"></section>
