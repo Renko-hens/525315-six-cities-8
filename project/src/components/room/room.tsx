@@ -1,16 +1,8 @@
 import React from 'react';
-import { useHistory, useParams } from 'react-router-dom';
 import Logo from '../logo/logo';
 import ReviewsForm from '../reviews-form/reviews-form';
 
 function Room(): JSX.Element {
-  const history = useHistory();
-  const params = useParams();
-  // eslint-disable-next-line no-console
-  console.log(history);
-
-  // eslint-disable-next-line no-console
-  console.log(params);
 
   return (
     <>
