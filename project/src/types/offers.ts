@@ -1,9 +1,9 @@
 export type Offer = {
-  id?: number,
+  id: string,
   premium: boolean;
   srcImage: string;
   title: string;
-  bookmarkActive?: boolean;
+  bookmarkActive: boolean;
   rating: number;
   type: string;
   value: number;

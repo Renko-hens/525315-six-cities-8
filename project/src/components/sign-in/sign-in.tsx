@@ -1,6 +1,6 @@
 import Logo from '../logo/logo';
 
-function LoginPage() {
+function SignIn(): JSX.Element {
   return (
     <>
       <div style={{
@@ -53,4 +53,4 @@ function LoginPage() {
   );
 }
 
-export default LoginPage;
+export default SignIn;

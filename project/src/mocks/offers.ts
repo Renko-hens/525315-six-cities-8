@@ -1,17 +1,19 @@
 import { Offers } from '../types/offers';
+import { generateRandomID } from '../utils';
 
 export const mockOffers: Offers = [
   {
-    id: 1,
+    id: generateRandomID(),
     premium: true,
     srcImage: 'img/apartment-01.jpg',
     value: 120,
     rating: 4,
+    bookmarkActive: true,
     title: 'Beautiful &amp; luxurious apartment at great location',
     type: 'flat',
   },
   {
-    id: 2,
+    id: generateRandomID(),
     premium: false,
     srcImage: 'img/room.jpg',
     value: 80,
@@ -21,25 +23,27 @@ export const mockOffers: Offers = [
     type: 'Private room',
   },
   {
-    id: 3,
+    id: generateRandomID(),
     premium: false,
     srcImage: 'img/apartment-02.jpg',
     value: 132,
     rating: 4,
+    bookmarkActive: true,
     title: 'Canal View Prinsengracht',
     type: 'Apartment',
   },
   {
-    id: 4,
+    id: generateRandomID(),
     premium: true,
     srcImage: 'img/apartment-03.jpg',
     value: 180,
     rating: 5,
+    bookmarkActive: false,
     title: 'Nice, cozy, warm big bed apartment',
     type: 'Apartment',
   },
   {
-    id: 5,
+    id: generateRandomID(),
     premium: false,
     srcImage: 'img/room.jpg',
     value: 80,
