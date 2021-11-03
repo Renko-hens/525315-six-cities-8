@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../logo/logo';
 import { Offers } from '../../types/offers';
-import PlaceCardList from '../place-card-list/place-card-list';
+import CitiesPlaceList from '../cities-place-list/cities-place-list';
 
 type MainProps = {
   offers: Offers,
@@ -32,7 +32,7 @@ function MainPage({
                     <a className="header__nav-link header__nav-link--profile" href="#">
                       <div className="header__avatar-wrapper user__avatar-wrapper">
                       </div>
-                      <span className="header__user-name user__name"> m</span>
+                      <span className="header__user-name user__name">Oliver.conner@gmail.com</span>
                     </a>
                   </li>
                   <li className="header__nav-item">
@@ -105,7 +105,7 @@ function MainPage({
                   </ul>
                 </form>
 
-                <PlaceCardList
+                <CitiesPlaceList
                   offers={offers}
                 />
               </section>
