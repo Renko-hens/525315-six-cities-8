@@ -70,6 +70,7 @@ function ReviewsForm(): JSX.Element {
               id={star.id}
               name="rating"
               type="radio"
+              checked={star.value === reviewsInputs.rating.value}
               value={star.value}
               onChange={handleInputRadioChange}
             />
